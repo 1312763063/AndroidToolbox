@@ -7,9 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="subtitle_gray">#FF6E6E6E</color>
     <color name="md_theme_primary">#006C4C</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_surface">#FEFBFF</color>
     <color name="md_theme_onSurface">#1B1B1F</color>
     <color name="md_theme_onSurfaceVariant">#44474E</color>
+    <color name="adb_connected">#4CAF50</color>      <!-- 绿色 -->
+    <color name="adb_disconnected">#F44336</color>   <!-- 红色 -->
 </resources>

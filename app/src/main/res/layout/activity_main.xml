@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/subtitle_not_connected"
-        android:textColor="@android:color/system_on_secondary_container_light"
+        android:textColor="@color/subtitle_gray"
         android:textAppearance="?attr/textAppearanceBodyMedium" />
 
     <!-- 按钮区 -->

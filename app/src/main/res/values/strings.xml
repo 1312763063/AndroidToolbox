@@ -11,7 +11,9 @@
     <string name="more_device_info">设备主要信息</string>
     <string name="menu_check_update">检查更新</string>
     <string name="main_title">Android工具箱</string>
-    <string name="main_desc">ADB 连接状态：未连接</string>
+    <string name="main_adb_prefix">ADB 连接状态：</string>
+    <string name="main_adb_connected">已连接</string>
+    <string name="main_adb_disconnected">未连接</string>
     <string name="btn_app_list">应用列表</string>
     <string name="btn_pkg_manager">安装包管理</string>
 </resources>
