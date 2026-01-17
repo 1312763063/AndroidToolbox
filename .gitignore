@@ -1,0 +1,65 @@
+# Gradle 缓存，体积大且可再生
+.gradle/
+build/
+*/build/
+
+# Android
+*.iml
+.idea/
+local.properties
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+
+# 签名 & 敏感
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# 本地 IDE 配置
+/.idea/
+/app/release/
+*.log
+
+# ==========================================================
+# .gitignore 注释速查表 —— 为什么要把它们拦在门外
+# ==========================================================
+# .gitignore 就是告诉 Git“这些文件/文件夹别往仓库里传”，
+# 否则仓库会臃肿、泄密、甚至编译不过。
+# ----------------------------------------------------------
+
+# .gradle/ ---------------- Gradle 本地缓存
+# 几百 MB，每人每次编译都会变，传上去仓库瞬间胖成球
+
+# build/ & */build/ ------- 编译输出目录（apk、aar、中间文件）
+# 同样巨大且完全可再生，传上去毫无意义
+
+# *.iml & .idea/ ---------- Android Studio 工程索引、个人窗口布局
+# 每个人的路径、SDK 版本、插件差异不同，一同步就冲突
+
+# local.properties -------- 本机 SDK/NDK 路径
+# 你的路径 D:\SDK 别人电脑没有，直接编译失败
+
+# .DS_Store --------------- macOS 文件夹视图缓存
+# 跨平台开发时 Windows/Linux 用户不需要，还捣乱
+
+# captures/ --------------- Android Studio 性能抓包文件
+# 几十到几百 MB，与代码无关
+
+# .externalNativeBuild & .cxx  NDK 生成的中间文件
+# 可重新生成，体积大
+
+# *.jks & *.keystore ------ 签名密钥
+# 一旦传到 GitHub = 把“前门钥匙”公开，别人可伪造发布
+
+# keystore.properties & signing.properties
+# 签名密码、别名等机密信息，同上
+
+# /app/release/ ----------- 你本地打的正式包
+# 二进制文件历史无法 diff，仓库膨胀
+
+# *.log ------------------- 各种运行时日志
+# 纯噪音，且可能含敏感路径
+# ==========================================================
