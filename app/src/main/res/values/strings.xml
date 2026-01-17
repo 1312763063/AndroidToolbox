@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Android工具箱</string>
+    <string name="subtitle_not_connected">未与电脑建立ADB连接</string>
+    <string name="subtitle_connected">已建立ADB连接</string>
+    <string name="btn_apps_list">应用列表</string>
+    <string name="btn_screen_shortcut">截屏、录屏快捷方式</string>
+    <string name="btn_global_float">全局悬浮功能</string>
+    <string name="btn_apk_manager">安装包管理</string>
+    <string name="btn_more">更多功能</string>
+    <string name="more_pai">弹出PAI界面</string>
+    <string name="more_device_info">设备主要信息</string>
+    <string name="menu_check_update">检查更新</string>
+    <string name="main_title">Android工具箱</string>
+    <string name="main_desc">ADB 连接状态：未连接</string>
+    <string name="btn_app_list">应用列表</string>
+    <string name="btn_pkg_manager">安装包管理</string>
 </resources>
