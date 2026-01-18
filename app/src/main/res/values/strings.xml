@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android工具箱</string>
+    <string name="app_name">Android工具箱</string> <!-- 应用名称修改仅处理此处 -->
     <string name="subtitle_not_connected">未与电脑建立ADB连接</string>
     <string name="subtitle_connected">已建立ADB连接</string>
     <string name="btn_apps_list">应用列表</string>

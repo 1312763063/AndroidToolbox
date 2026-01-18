@@ -21,6 +21,7 @@ signing.properties
 # 本地 IDE 配置
 /.idea/
 /app/release/
+/app/src/allcode.txt
 *.log
 
 # ==========================================================

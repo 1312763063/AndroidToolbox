@@ -8,4 +8,5 @@ git push origin v2.3.0
 # 导出项目源码到一个文件
 PS D:\Androidstudio\Android Project\androidtoolbox\app\src> Get-ChildItem -Path .\main\ -Filter *.java -Recurse | Get-Content > allcode.txt
 
-# 
+# git commit规范化格式
+https://ai.dangbei.com/share/CWHum9tiKQ
