@@ -12,10 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidToolBox" >
+        <!-- android:configChanges="uiMode" 删掉，只要 Activity 没有被声明拦截 uiMode，
+        系统就会在用户切换深色/浅色时 自动重建 Activity，界面立即跟随。写了 uiMode，系统认为你要自己处理，于是不再重建。-->
+        <activity
+            android:name=".BaseActivity"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:configChanges="uiMode">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

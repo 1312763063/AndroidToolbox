@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <!-- 统一的主页控件样式 -->
+    <style name="Widget.AndroidToolBox.Home.Button" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:layout_width">@dimen/home_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/home_button_margin_bottom</item>
+        <item name="android:padding">@dimen/home_button_text_padding</item>
+    </style>
+
+    <!-- 统一的主页控件样式 -->
+    <style name="Widget.AndroidToolBox.Home.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="android:layout_width">@dimen/home_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/home_button_margin_bottom</item>
+        <item name="android:textSize">@dimen/home_button_text_size</item>
+        <!-- 轨道颜色 -->
+        <item name="trackTint">?attr/colorSecondaryContainer</item>
+        <!-- 滑块颜色 -->
+        <item name="thumbTint">?attr/colorSecondary</item>
+        <!-- 内边距，让轨道不贴边 -->
+        <item name="android:padding">@dimen/home_button_text_padding</item>
+    </style>
+
+    <!-- 统一的主页控件样式 -->
+    <style name="Widget.AndroidToolBox.Home.More" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">@dimen/home_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/home_button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/home_button_margin</item>
+        <item name="android:padding">@dimen/home_button_text_padding</item>
+    </style>
+
+</resources>

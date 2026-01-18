@@ -15,8 +15,7 @@
             android:id="@+id/searchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="搜索工具、命令或应用"
-            app:navigationIcon="@drawable/ic_menu_24"
+            android:hint="@string/app_name"
             app:menu="@menu/menu_main" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,68 +32,57 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:padding="24dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!-- 大标题 -->
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="?attr/textAppearanceHeadlineLarge"
-        android:textColor="?android:attr/textColorPrimary"/>
+        <!-- 大标题 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?attr/textAppearanceHeadlineLarge"
+            android:textColor="?android:attr/textColorPrimary"
+            android:visibility="gone" />
 
-    <!-- 副标题 -->
-    <TextView
-        android:id="@+id/tv_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/subtitle_not_connected"
-        android:textColor="@color/subtitle_gray"
-        android:textAppearance="?attr/textAppearanceBodyMedium" />
+        <!-- 副标题 -->
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/subtitle_not_connected"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/subtitle_gray" />
 
-    <!-- 按钮区 -->
-    <Button
-        android:id="@+id/btn_apps_list"
-        style="@style/Widget.Material3.Button.TonalButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/btn_apps_list"/>
+        <!-- 按钮区 -->
+        <Button
+            android:id="@+id/btn_apps_list"
+            style="@style/Widget.AndroidToolBox.Home.Button"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_apps_list"/>
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switch_screen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_screen_shortcut" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_screen"
+            style="@style/Widget.AndroidToolBox.Home.Switch"
+            android:text="@string/btn_screen_shortcut" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switch_float"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_global_float" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_float"
+            style="@style/Widget.AndroidToolBox.Home.Switch"
+            android:text="@string/btn_global_float" />
 
-    <Button
-        android:id="@+id/btn_apk_manager"
-        style="@style/Widget.Material3.Button.TonalButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_apk_manager" />
+        <Button
+            android:id="@+id/btn_apk_manager"
+            style="@style/Widget.AndroidToolBox.Home.Button"
+            android:text="@string/btn_apk_manager" />
 
-    <Button
-        android:id="@+id/btn_more"
-        style="@style/Widget.Material3.Button.OutlinedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_more" />
+        <Button
+            android:id="@+id/btn_more"
+            style="@style/Widget.AndroidToolBox.Home.More"
+            android:text="@string/btn_more" />
 
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
