@@ -67,6 +67,8 @@ public final class AdbStatusHelper {
 
     /**
      * 检查设备是否通过 USB 连接到电脑
+     * @return true 表示当前处于 USB 充电状态；false 表示未连接或获取失败
+     * 返回值仅表示“USB 充电”，并不能区分“是否开启 USB 调试”或“是否建立 ADB 连接”
      */
     private static boolean isUsbConnected(Context context) {
         IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
@@ -79,7 +81,7 @@ public final class AdbStatusHelper {
     }
 
     /**
-     * 创建 USB 连接状态广播接收器
+     * 创建 USB 连接状态广播接收器，好像暂时没调用。。
      */
     public static BroadcastReceiver createUsbReceiver() {
         return new BroadcastReceiver() {
